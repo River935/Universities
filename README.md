@@ -9,6 +9,9 @@ The folder 1 needs to be moved inside the htdocs folder of XAMPP and the project
 
 index.html is the home page also connected to "HOME" on the top of the page
 
+![image](https://user-images.githubusercontent.com/105315872/213169154-63a1c40e-2d38-4e1a-9eb4-f2d4cb6a9f15.png)
+
+
 uni_page.php is the second page, with the search tool for the universities is located
 also connected to "SEARCH UNI" on top of the page, and to "SEARCH" in the home page
 
