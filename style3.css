@@ -1,0 +1,42 @@
+
+
+.world-outline {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.1);
+  stroke-width: 1.0px;
+}
+
+.back-country {
+  fill: #dadac4;
+  stroke: #fff;
+  stroke-width: 0.0px;
+  stroke-linejoin: round;
+}
+
+.back-line {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .05;
+  stroke-width: .5px;
+}
+
+.country {
+  fill: #737368;
+  stroke: #fff;
+  stroke-width: 0.0px;
+  stroke-linejoin: round;
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .08;
+  stroke-width: .5px;
+}
+
+text {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-anchor: middle;
+}

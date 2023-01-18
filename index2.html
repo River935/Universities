@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--HOME PAGE-->
+<head>
+    <title>Add Uni</title>
+    <link rel="stylesheet" href="style4.css">
+        <!-- Bootstrap CSS -->
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      />
+  
+      <link rel="stylesheet" href="style1.css" />
+</head>
+<body bgcolor="#f0fae6">
+  <div class="header">
+
+
+  </div>
+<header class="header clearfix">
+
+    <div class="main">
+        <div class="navbar-collapse justify-content-right" id="navbarNavDropdown">
+            <div class="icon">
+                <h2 class="logo">Universities</h2>
+            </div>
+            
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#" id="allEvents">HOME</a></li>
+                    <li><a href="#"id="other1">SEARCH UNI</a></li>
+                    <li><a href="#"id="other2">SEARCH CODE</a></li>
+                    <li><a href="#" id="map2">MAP</a></li>
+                    <li><a href="#" id="map1">GOOGLE MAPS</a></li>
+                    <li><a href="#" id="add">ADD UNI</a></li>
+                    <li><a href="#" id="cal">CALENDAR</a></li>
+                    
+                </ul>
+                
+                
+            </div>
+
+
+        </div> 
+
+
+  </head>
+  &emsp;
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col mx-auto col-md-8 mt-3 text-center">
+          <br>
+          <h3>Create your own list of favourite universities</h3>
+          <br>
+          <div class="alert align-item-center" id="message"></div>
+          <form id="itemForm">
+            
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="itemInput"
+                value=""
+                placeholder="please enter country..."
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="itemInput1"
+                value=""
+                placeholder="please enter university..."
+              />
+              <input
+                type="text"
+                class="form-control"
+                id="itemInput2"
+                value=""
+                placeholder="please enter link..."
+              />
+              <button class="btn btn-outline-primary">ADD-ITEM</button>
+            </div>
+          </form>
+
+          <ul class="nav nav-tabs">
+            
+            <li class="nav-item" data-type="todo">
+            
+          </ul>
+
+          <!-- tasks-list -->
+
+          <ul class="list-group list-group-flush" id="tasksList"></ul>
+          <input type="hidden" id="filterType" value="all" />
+          <input type="hidden" id="citem" value="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script src="script.js"></script>
+</html>

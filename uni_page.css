@@ -1,0 +1,49 @@
+table, th, td {
+    border: 1px solid;
+}
+        
+h1 {
+    color: black;
+    text-align: center;
+}
+
+.tabella{
+    width: 1200px;
+    height: 1200px;
+    margin-left: 270px;
+    font-family: 'Times New Roman';
+    float: left;
+    padding: 10px;
+
+    border: 2px ;
+    margin-top: 800px;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    margin: auto;
+    position: relative;
+}
+#country{
+    border: 1px solid;
+    color: black;
+    width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman';
+    float: center;
+    padding: 10px;
+    background-color: white;
+    border: 2px ;
+    margin-top: 1200px;
+    font-size: 15px;
+    border-radius: 2px black;
+    border-color: black;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    margin: 50px;
+    position: relative;
+}
+    

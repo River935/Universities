@@ -1,0 +1,352 @@
+body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: #0b4121;
+}
+button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+#dateToday {
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+#header {
+  padding: 10px;
+  color: #B5EEBE;
+  font-size: 22px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  /*background-image: url("milky-way-2695569__480.jpg");*/
+}
+#backButton {
+  background-color:#1b6939;
+  width: 25px;
+}
+#nextButton {
+  background-color:#1b6939;
+  width: 25px;
+}
+#allEvents {
+  background-color:#1b6939;
+  width: 60px;
+}
+#deleteAllEvents {
+  background-color:#1b6939;
+  width: 60px;
+  margin-top: 20px;
+}
+
+.container {
+  width: 595px;
+}
+
+.imagetitle .center {
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.weekdays {
+  width: 585px;
+  display: flex;
+  color: #B5EEBE;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  justify-content: space-between;
+  margin-left: 5px;
+  
+}
+.weekdays div {
+  width: 585px;
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+#calendar {
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day {
+  width: 77px;
+  padding: 10px;
+  height: 77px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 4.3px;
+  box-shadow: 0px 0px 5px #09391c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 30px;
+ 
+}
+.day:hover {
+  background-color: #B5EEBE;
+}
+
+.day + #currentDay {
+  background-color: #bdc7db;
+}
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #09391c;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color: #FFFCFF !important;
+  box-shadow: none !important;
+}
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color:#0b4121;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+#eventTitleInput, #hourEventInput, #sportEventInput, #cityEvent, #locationEvent, #lastEvent{
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton, #deleteButton {
+  background-color: #d36c6c;
+}
+#saveButton, #closeButton {
+  background-color: #92a1d1;
+}
+#detailedEvent{
+  background-color: #3855BA;
+}
+#eventText, #timeUTC, #time, #sport, #city, #location, #last{
+  font-size: 14px;
+  color: #B5EEBE;
+}
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}
+
+#tb1{
+  width: 100%;
+  margin: auto;
+  color: #B5EEBE;
+  margin-top: auto;
+  position: absolute;
+  border: 5px;
+  padding:10px;
+  
+}
+#titlePage{
+  width: 100%;
+  margin: auto;
+  margin-left: auto;
+  color: #B5EEBE;
+  top: 50px;
+  border: 5px;
+}
+#goBack{
+  width: 50%;
+  background-color:#1b6939;
+  top: 50px;
+  border: 3px;
+} 
+
+/* mini phone and phone*/  /* enough for tablet too? */
+@media only screen and (min-width: 375px) and (max-width: 576px){
+  #header {
+    padding: 5px;
+    color: #B5EEBE;
+    font-size: 18px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  #backButton {
+    background-color:#1b6939;
+    width: 20px;
+  }
+  #nextButton {
+    background-color:#1b6939;
+    width: 20px;
+  }
+  #allEvents {
+    background-color:#1b6939;
+    width: 50px;
+  }
+  #deleteAllEvents {
+    background-color:#1b6939;
+    width: 50px;
+    margin-top: 20px;
+  }
+
+
+  .container {
+    width: 370px;
+  }
+
+  .imagetitle .center {
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .weekdays {
+    width: 358px;
+    display: flex;
+    color: #B5EEBE;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    justify-content: space-between;
+    margin-left: 2px;
+    
+  }
+  .weekdays div {
+    width: 370px;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #calendar {
+    width: 370px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .day {
+    width: 46px;
+    padding: 5px;
+    height: 46px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 3.4px;
+    box-shadow: 0px 0px 2px #09391c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    font-size: 11px;
+
+  }
+  .day:hover {
+    background-color: #B5EEBE;
+  }
+  
+  .day + #currentDay {
+    background-color: #bdc7db;
+  }
+  .event {
+    font-size: 8px;
+    padding: 3px;
+    background-color: #09391c;
+    color: white;
+    border-radius: 5px;
+    max-height: 45px;
+    overflow: hidden;
+  }
+  .padding {
+    cursor: default !important;
+    background-color: #FFFCFF !important;
+    box-shadow: none !important;
+  }
+  #newEventModal, #deleteEventModal {
+    display: none;
+    z-index: 20;
+    padding: 18px;
+    background-color:#0b4121;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    width: 275px;
+    top: 100px;
+    left: auto;
+    position: absolute;
+    font-family: sans-serif;
+  }
+  #eventTitleInput, #hourEventInput,  #sportEventInput, #cityEvent, #locationEvent, #lastEvent{
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+  }
+
+  #eventTitleInput.error {
+    border: 2px solid red;
+  }
+  #cancelButton, #deleteButton {
+    background-color: #d36c6c;
+  }
+  #saveButton, #closeButton {
+    background-color: #92a1d1;
+  }
+  #eventText, #timeUTC, #time, #sport, #city, #location, #last{
+    font-size: 11px;
+    color: #C0D9FF;
+  }
+  #modalBackDrop {
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+  }
+}
